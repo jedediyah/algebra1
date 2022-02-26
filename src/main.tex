@@ -1,0 +1,87 @@
+\documentclass{tstextbook}
+
+% Template from http://www.typesetters.se/latex-textbook-template/ 
+\usepackage{multicol}
+
+\begin{document}
+
+\begin{titlepage}
+\BgThispage
+\newgeometry{left=1cm,right=6cm,bottom=2cm}
+\vspace*{0.4\textheight}
+\noindent
+\textcolor{white}{\Huge\textbf{\textsf{Algebra 1}}}
+\vspace*{2cm}\par
+\noindent
+\begin{minipage}{0.35\linewidth}
+    \begin{flushright}
+    Nantucket High School \\
+    2022 -- 2023
+    \end{flushright}
+\end{minipage} \hspace{15pt}
+%
+\begin{minipage}{0.02\linewidth}
+    \rule{1pt}{175pt}
+\end{minipage} \hspace{-10pt}
+%
+\begin{minipage}{0.63\linewidth}
+\vspace{5pt}
+%    \begin{abstract} 
+%  
+\hspace{35mm}
+\includegraphics[width=1.0\textwidth]{img/shell.png}
+%    \end{abstract}
+\end{minipage}
+\end{titlepage}
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\pagenumbering{gobble}
+
+\setcounter{section}{-1}
+\include{chapters/copyright}
+\include{chapters/acknowledgements}
+\include{chapters/introduction}
+\newpage 
+\tableofcontents
+\newpage
+\pagenumbering{arabic}
+
+%\include{chapters/examples}  % Uncomment to see style examples 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\include{chapters/number-and-expression}
+\include{chapters/equivalence}
+\include{chapters/linear-equations-and-inequalities}
+\include{chapters/systems}
+\include{chapters/functions}
+\include{chapters/sequences}
+\include{chapters/statistics}
+\include{chapters/polynomials}
+
+\appendix
+\appendixpage
+%\noappendicestocpagenum
+%\addappheadtotoc
+
+%\include{chapters/problem-solutions}
+
+
+
+
+%---------------------------------------------------------------------------
+% Bibliography
+%---------------------------------------------------------------------------
+
+\addcontentsline{toc}{chapter}{\textcolor{tssteelblue}{Literature}}
+\printbibliography{}
+
+%---------------------------------------------------------------------------
+% Index
+%---------------------------------------------------------------------------
+
+\printindex
+
+\end{document}
