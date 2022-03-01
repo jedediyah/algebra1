@@ -1,2 +1,2 @@
-# algebra1
-An Algebra 1 text with support of pre-algebra content.
+# Math 1
+A grade 9 math text with focus on Pre-Algebra and Algebra 1 content. 
