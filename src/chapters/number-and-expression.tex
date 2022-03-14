@@ -83,6 +83,21 @@ Justify each of the above cases for multiplication.  %The same justifications wi
 
 \end{exercise}
 
+Additional Practice: 
+\begin{itemize}
+	\item {\footnotesize \url{https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-negative-numbers-add-and-subtract/cc-7th-add-sub-neg-number-line/e/adding-negative-numbers-on-the-number-line}}
+	\item {\footnotesize \url{https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-negative-numbers-add-and-subtract/cc-7th-add-sub-neg-number-line/e/negative-number-addition-and-subtraction--equations-and-number-lines}}
+	\item {\footnotesize \url{https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-negative-numbers-add-and-subtract/cc-7th-add-negatives/e/adding_negative_numbers}}
+	\item {\footnotesize \url{https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-negative-numbers-add-and-subtract/cc-7th-sub-neg-intro/e/understand-subtraction-as-adding-the-opposite}}
+	\item {\footnotesize \url{https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-negative-numbers-add-and-subtract/cc-7th-sub-neg-intro/e/adding_and_subtracting_negative_numbers}}
+	\item {\footnotesize \url{https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-negative-numbers-add-and-subtract/cc-7th-add-and-sub-integers/e/integer-addition-and-subtraction-2}}
+
+	\item {\footnotesize \url{https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-negative-numbers-multiply-and-divide/cc-7th-mult-div-negatives/e/signs-of-expressions}}	
+	\item {\footnotesize \url{https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-negative-numbers-multiply-and-divide/cc-7th-mult-div-negatives/e/multiplying_and_dividing_negative_numbers}}	
+	\item {\footnotesize \url{https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-negative-numbers-multiply-and-divide/cc-7th-mult-div-negatives/e/dividing-negative-numbers}}	
+\end{itemize}
+
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%
@@ -181,11 +196,39 @@ You can turn your grid into a 3D visualization of GCF by stacking objects (coins
 \label{ex:gcdgrid}
 \end{exercise}
 
+
 \begin{definition} [Least Common Multiple]
 The \emph{least common multiple} (LCM) of two numbers is the smallest multiple they have in common.  
 
 For example, the LCM of \(6\) and \(4\) is \(12\).  The LCM of \(8\) and \(24\) is \(24\).   
 \end{definition}
+\begin{example}\textbf{Find the LCM of \(8\) and \(14\)}
+\\
+Some of the multiples of \(8\) are 
+	\[8, 16, 24, 32, 40, 48, 56, 64, \dots \]
+Some of the multiples of \(14\) are 
+	\[14, 28, 42, 56, 70, 84, 98, 112, \dots \]	
+The smallest common multiple of \(8\) and \(14\) is 56.  
+\end{example}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage 
+
+\vspace*{25mm} 
+% 10 x 10 Grid for Exercise~\ref{ex:gcdgrid}
+\newcommand*{\xMin}{0}%
+\newcommand*{\xMax}{10}%
+\newcommand*{\yMin}{0}%
+\newcommand*{\yMax}{10}%
+\hspace{-15mm}\begin{tikzpicture}[scale=1.60]
+    \foreach \i in {\xMin,...,\xMax} {
+        \draw [very thin,gray] (\i,\yMin) -- (\i,\yMax)  node [below] at (\i-0.5,\yMin) {$\i$};
+    }
+    \foreach \i in {\yMin,...,\yMax} {
+        \draw [very thin,gray] (\xMin,\i) -- (\xMax,\i) node [left] at (\xMin,\i-0.5) {$\i$};
+    }
+\end{tikzpicture}
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%
